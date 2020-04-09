@@ -5,7 +5,7 @@ function imprimirSoma(a, b) {
 
 imprimirSoma(2,3)//5
 imprimirSoma(2)//NaN (2+undefined)
-imprimirSoma(2,10,3,4,7)//12 ignora o resto
+imprimirSoma(2,10,3,4,7)//12 (ignora o resto)
 imprimirSoma()//Nan
 
 //function com retorno 

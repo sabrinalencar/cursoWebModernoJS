@@ -6,4 +6,4 @@ console.log(typeof Cliente)//function
 console.log(typeof new Cliente)//object
 
 class Produto {}
-console.log(typeof Produto)
+console.log(typeof Produto)//function

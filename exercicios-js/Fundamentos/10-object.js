@@ -12,4 +12,5 @@ const prod2 = {
 }
 console.log(prod2)
 //Transformando em JSON (javascript object notation)
+//Json =! object
 // {"nome":"Camisa Polo", "preco": "79.90"}

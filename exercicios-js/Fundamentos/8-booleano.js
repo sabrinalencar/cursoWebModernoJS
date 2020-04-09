@@ -11,8 +11,8 @@ console.log(!!isAtivo)//true
 console.log("os verdadeiros...")
 console.log(!!3)//true
 console.log(!!-1)//true
-console.log(!!' ')//true, string c espaco
-console.log(!![])//true
+console.log(!!' ')//true, (string c espaco)
+console.log(!![])//true (vetor)
 console.log(!!Infinity)//true
 isAtivo = 33
 console.log(!!(isAtivo = 33))
