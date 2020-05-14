@@ -1,6 +1,6 @@
-let stringPontos = "30, 40, 20, 4, 51, 25, 42, 38, 56, 0"
+let stringPontos = "10, 20, 20, 8, 25, 3, 0, 30, 1"
 //"10, 20, 20, 8, 25, 3, 0, 30, 1" por que nao dá certo ???
-
+//30, 40, 20, 4, 51, 25, 42, 38, 56, 0
 function analisaJogos(lista) {
     let pontuacoes = lista.split(", ")//nao esquecer do espaço
     let melhorJogo = pontuacoes[0]
