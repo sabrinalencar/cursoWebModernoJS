@@ -12,10 +12,11 @@ const filho = Object.create(pai, {
 console.log(filho.nome)
 filho.nome = 'Pedro'
 console.log(`${filho.nome} tem cabelo ${filho.corCabelo}`)
-//por padrão lista atributos que foram setados  
+//por padrão lista atributos que foram setados (se os atributos herdados não forem setados eles não aparecerão) 
 console.log(Object.keys(filha))
 console.log(Object.keys(filho))
 
+// função hasOwnProperty
 for (let key in filho) {
     filho.hasOwnProperty(key) ?
         console.log(key) : console.log(`Por herança: ${key}`)
