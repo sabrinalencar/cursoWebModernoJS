@@ -1,3 +1,4 @@
+// Reduce tem essa função de agregar os elementos
 const alunos = [
     { nome:'João', nota: 9.2, bolsista: false },
     { nome:'Leandro', nota: 7.3, bolsista: true },
