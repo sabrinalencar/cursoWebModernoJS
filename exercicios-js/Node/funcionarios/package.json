@@ -1,0 +1,16 @@
+{
+  "_comentario":"Este pacote serve para guardar todas dependências do projeto/ ^ permite evoluir em  versões minors (19), ~ permite evoluir versão patch (Major.Minor.Patch)",
+  "name": "funcionarios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
