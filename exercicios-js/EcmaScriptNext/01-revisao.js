@@ -4,9 +4,9 @@
 {
     var a = 2
     let b = 3
-    console.log(b) // let tem escopo de bloco só é visível aqui
+    console.log('b:',b) // let tem escopo de bloco só é visível aqui
 }
-console.log(a)// var não tem escopo de bloco
+console.log('a:',a)// var não tem escopo de bloco
 
 // Template String
 const produto = 'iPad'
@@ -20,9 +20,9 @@ const [l, e, t, ...ras] = "string"
 console.log(l, e, t, ras) // s t r ['i', 'n', 'g']
 
 const [x, y] = [1, 2]
-console.log(x, y)
+console.log('X e Y',x, y)
 const [, b, c] = [1, 2, 3]
-console.log(b, c)
+console.log('b e c',b, c)
 
 const { idade: i, nome: name } = { nome: 'Sabrina', idade: '20' }
 console.log(i, name)
