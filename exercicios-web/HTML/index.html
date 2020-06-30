@@ -1,31 +1,40 @@
+<!-- para usar o http-server precisa setar no powerShell Set-ExecutionPolicy Unrestricted -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercícios HTML</title>
+    <style>
+        #conteudo{
+            padding: 30px 0px;
+            
+        }
+    </style>
 </head>
 <body>
     <header><h1>Exercícios HTML</h1></header>
     <nav>
         <a href="exercicios/teste.html">Teste</a>
+        <a href="exercicios/texto1.html">Texto1</a>
     </nav>
     <section id="conteudo"></section>
-    <footer>
-        <br>
+    <footer>     
         Curso de Web Moderno
     </footer>
     <script>
+        // funcao que será disparada quando clicado
         document.querySelectorAll('a').forEach(link => {
-            const conteudo = document.getElementById('conteudo')
-
+            const conteudo = document.getElementById('conteudo')// referncia a section
+            
             link.onclick = function(e) {
-                e.preventDefault()//previne da navegação
-                fetch(link.href)
-                    .then(resp => resp.text())// text é uma função
-                    .then(html => conteudo.i = html)
+                e.preventDefault()
+                
+                fetch(link.href)// requisição ajax
+                    .then(resp => resp.text())// pegando o conteudo html
+                    .then(html => conteudo.innerHTML = html)
             }
-        })    
+        })
     </script>
 </body>
 </html>
