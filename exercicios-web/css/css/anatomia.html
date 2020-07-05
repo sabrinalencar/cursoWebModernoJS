@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anatomia CSS</title>
+    <style>
+        .seletor {
+            color: sandybrown;
+            font-size: 30px;
+            text-align: center;
+            /* múltiplos valores*/
+            border:solid 4px sandybrown; /* shorthand property*/
+            font-family: Helvetica, sans-serif; /* alternativa */
+            /* funções pre definidas*/
+            width: calc(100% - 50px);
+            background-color: rgb(253, 229, 151);
+        }
+
+        /* usando uma pseudo classe */
+        .seletor:hover {
+            background-color: rgb(247, 182, 97);
+        }
+
+        /* pseudo elemento */
+        .seletor::first-letter {
+            font-size: 40px;
+            font-weight: bold;
+        }
+        /* padrão de nomenclatura */
+        /* dash-case ou camelCase ? */
+        /* os elementos html não é caseSensitive mas as classes no css são*/
+    </style>
+</head>
+
+<body>
+    <div class="seletor">Conteúdo</div>
+</body>
+
+</html>
